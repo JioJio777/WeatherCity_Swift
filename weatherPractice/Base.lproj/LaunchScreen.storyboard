@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bz" translatesAutoresizingMaskIntoConstraints="NO" id="Yha-VB-wxm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="城市" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kog-rg-8RI">
+                                <rect key="frame" x="55" y="322" width="115" height="69"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="57"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天气" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3G-cz-146">
+                                <rect key="frame" x="267" y="504" width="115" height="69"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="57"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&amp;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMh-xj-KBx">
+                                <rect key="frame" x="194" y="425" width="26" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hMh-xj-KBx" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="1sS-Vr-yID"/>
+                            <constraint firstItem="Yha-VB-wxm" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="3zR-Ls-2hN"/>
+                            <constraint firstItem="i3G-cz-146" firstAttribute="leading" secondItem="hMh-xj-KBx" secondAttribute="trailing" constant="47" id="7L4-5y-GYl"/>
+                            <constraint firstItem="Yha-VB-wxm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="APy-c1-Wuo"/>
+                            <constraint firstItem="hMh-xj-KBx" firstAttribute="top" secondItem="kog-rg-8RI" secondAttribute="bottom" constant="34" id="CsI-X8-Ffv"/>
+                            <constraint firstItem="hMh-xj-KBx" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="FII-xl-bz1"/>
+                            <constraint firstItem="hMh-xj-KBx" firstAttribute="leading" secondItem="kog-rg-8RI" secondAttribute="trailing" constant="24" id="KGu-Wc-QfQ"/>
+                            <constraint firstItem="Yha-VB-wxm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YQI-Jm-djd"/>
+                            <constraint firstAttribute="bottom" secondItem="Yha-VB-wxm" secondAttribute="bottom" id="jZY-YI-Tcs"/>
+                            <constraint firstItem="i3G-cz-146" firstAttribute="top" secondItem="hMh-xj-KBx" secondAttribute="bottom" constant="33" id="zR0-Kv-Bql"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bz" width="2160" height="1920"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
